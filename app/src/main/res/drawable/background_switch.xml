@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    -<item android:state_checked="true">
+
+
+    -<shape android:useLevel="false" android:dither="true" android:visible="true" android:shape="rectangle">
+
+    <gradient android:angle="90" android:endColor="#00a5ff" android:startColor="#00a5ff"/>
+
+    <corners android:radius="5dp"/>
+
+    <size android:height="10sp" android:width="50sp"/>
+
+</shape>
+
+<!--    <item android:drawable="@drawable/ic_notifications_active"/>-->
+
+</item>
+
+
+    -<item android:state_checked="false">
+
+
+    -<shape android:useLevel="false" android:dither="true" android:visible="true" android:shape="rectangle">
+
+    <gradient android:angle="90" android:endColor="#CC0E0E" android:startColor="#CC0E0E"/>
+
+    <corners android:radius="5dp"/>
+
+    <size android:height="10sp" android:width="50sp"/>
+
+</shape>
+
+<!--    <item android:drawable="@drawable/ic_notifications_off"/>-->
+
+</item>
+
+</selector>

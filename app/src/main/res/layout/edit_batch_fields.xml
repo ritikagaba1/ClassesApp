@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="82dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/batch_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_margin="20sp"
+                    android:hint="Batch Name"
+                    android:textColorLink="@color/colorPrimaryDark"
+                    android:textSize="20sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="82dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/batch_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_margin="20sp"
+                    android:hint="Batch Location"
+
+                    android:textColorLink="@color/colorPrimaryDark"
+                    android:textSize="20sp"  />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="82dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/batchtime"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_margin="20sp"
+                    android:hint="Batch Time"
+
+                    android:textColorLink="#16c266"
+                    android:textSize="20sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="82dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/batchteacher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:hint="Batch Teacher"
+                    android:textSize="20sp"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="82dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/maximumslot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:hint="Batch Maximum Slot"
+                    android:textSize="20sp"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/batchstatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:hint="Batch Status"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="Batch Days"
+                android:textSize="20sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/monday"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:text="Mon"
+
+                    app:layout_constraintEnd_toStartOf="@+id/tuesday"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/tuesday"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:text="Tue"
+                    />
+                <CheckBox
+                    android:id="@+id/wednesday"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:text="Wed"
+                    />
+                <CheckBox
+                    android:id="@+id/thursday"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:text="Thu"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/friday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+
+                    android:text="Fri"
+                    />
+                <CheckBox
+                    android:id="@+id/saturday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+
+                    android:layout_marginTop="20dp"
+                    android:text="Sat"
+                    />
+                <CheckBox
+                    android:id="@+id/sunday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+
+                    android:layout_marginTop="20dp"
+                    android:text="Sun"
+                    />
+            </LinearLayout>
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="20sp"
+                android:background="#00a5ff"
+                android:text="Update"
+                android:textColor="#FFFCFC"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:background="#00a5ff"
+                android:text="Cancel"
+                android:textColor="#FFFCFC"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

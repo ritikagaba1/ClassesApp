@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="82dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/studentid"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_margin="20sp"
+                    android:hint="Student Id"
+                    android:textColorLink="@color/colorPrimaryDark"
+                    android:textSize="20sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="82dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/student_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_margin="20sp"
+                    android:hint="Student Name"
+
+                    android:textColorLink="@color/colorPrimaryDark"
+                    android:textSize="20sp"  />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="82dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/parentname"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_margin="20sp"
+                    android:hint="Parent Name"
+
+                    android:textColorLink="#16c266"
+                    android:textSize="20sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="82dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mobileno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20sp"
+                    android:hint="Mobile Number"
+                    android:textSize="20sp"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="82dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/alternativemobileno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20sp"
+                    android:hint="Alternative Mobile No"
+                    android:textSize="20sp"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="82dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/startdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20sp"
+                    android:hint="Start Date"
+                    android:textSize="20sp"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dateofbirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20sp"
+                    android:hint="Date of Birth"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20sp"
+                    android:hint="Email ID"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/classes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20sp"
+                    android:hint="Classes/Subjects/Course"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/school"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20sp"
+                    android:hint="School/College"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="20sp"
+                android:background="#00a5ff"
+                android:text="Save"
+                android:textColor="#FFFCFC"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:background="#00a5ff"
+                android:text="Cancel"
+                android:textColor="#FFFCFC"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

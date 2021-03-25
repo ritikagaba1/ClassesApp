@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:orientation="vertical"
+    android:layout_height = "match_parent"
+    tools:context = "com.example.classesapp.StudentProfile">
+
+
+    <EditText
+        android:id="@+id/studentid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@id/studentname"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Student Id"
+        android:inputType="text"
+
+        android:padding="15dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/studentname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Student Name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+
+        android:inputType="text"
+        android:layout_centerInParent="true"
+
+        android:textSize="15sp" />
+    <EditText
+        android:id="@+id/parentsname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Parents Name/Guardian Name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+
+        android:inputType="text"
+        android:layout_centerInParent="true"
+
+        android:textSize="15sp" />
+    <EditText
+        android:id="@+id/mobileno"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Mobile No"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+
+        android:inputType="text"
+        android:layout_centerInParent="true"
+
+        android:textSize="15sp" />
+    <EditText
+        android:id="@+id/alternativemobileno"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Alternative Mobile No"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+
+        android:inputType="text"
+        android:layout_centerInParent="true"
+
+        android:textSize="15sp" />
+    <EditText
+        android:id="@+id/dateofbirth"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Date of Birth"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+
+        android:inputType="text"
+        android:layout_centerInParent="true"
+
+        android:textSize="15sp" />
+    <EditText
+        android:id="@+id/startdate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Alternative Mobile No"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+
+        android:inputType="text"
+        android:layout_centerInParent="true"
+
+        android:textSize="15sp" />
+    <EditText
+        android:id="@+id/emailid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Email ID"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+
+        android:inputType="text"
+        android:layout_centerInParent="true"
+
+        android:textSize="15sp" />
+    <EditText
+        android:id="@+id/classes"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Classes/Subjects/Course"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+
+        android:inputType="text"
+        android:layout_centerInParent="true"
+
+        android:textSize="15sp" />
+    <EditText
+        android:id="@+id/school"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="School/College"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+
+        android:inputType="text"
+        android:layout_centerInParent="true"
+
+        android:textSize="15sp" />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+
+        android:textColor="@android:color/white"
+        android:text="Save"/>
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+
+        android:textColor="@android:color/background_dark"
+        android:text="Cancel"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+        android:layout_above="@id/swipeRight"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/swipeRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="15sp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>

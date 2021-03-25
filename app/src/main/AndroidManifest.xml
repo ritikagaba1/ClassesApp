@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="example.javatpoint.com.introonetimefirsttime">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        
+        <activity
+            android:name="com.example.classesapp.WelcomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.classesapp.MainActivity"   android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name="com.example.classesapp.Dashboard"  android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name="com.example.classesapp.StudentProfile" android:theme="@style/AppTheme1"  />
+        <activity
+            android:name="com.example.classesapp.Register" android:theme="@style/Theme.AppCompat.Light.NoActionBar"   />
+        <activity
+            android:name="com.example.classesapp.BatchList"  android:theme="@style/AppTheme1"  />
+        <activity
+            android:name="com.example.classesapp.BatchFields" android:theme="@style/AppTheme1" />
+        <activity
+            android:name="com.example.classesapp.StudentList" android:theme="@style/AppTheme1"
+
+
+            />
+        <activity
+            android:name="com.example.classesapp.AttendanceList" android:theme="@style/AppTheme1"
+
+
+            />
+        <activity
+            android:name="com.example.classesapp.AttendanceMark" android:theme="@style/AppTheme1"
+
+
+            />
+        <activity
+            android:name="com.example.classesapp.EditBatchFields" android:theme="@style/AppTheme1" />
+        <activity
+            android:name="com.example.classesapp.EditStudentsFields" android:theme="@style/AppTheme1"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+    </application>
+
+</manifest>

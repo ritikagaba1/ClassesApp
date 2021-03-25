@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mstb="http://schemas.android.com/apk/res-auto"
+    xmlns:mtb="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:id="@+id/studentid"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+           android:layout_weight="2"
+
+            android:text="Student ID"
+
+
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="#000F0E0E" />
+
+        <TextView
+            android:id="@+id/studentname"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginTop="10dp"
+
+
+
+            android:text="Student Name"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textColor="#00a5ff"
+            android:textColorHint="#000F0E0E" />
+
+        <Switch
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:typeface="sans"
+            android:track="@drawable/custom_track"
+            android:thumbTextPadding="15dp"
+            android:layout_gravity="center_horizontal"
+            android:thumb="@drawable/background_switch"
+            android:textStyle="bold|italic"
+
+
+            android:textOn="Present"
+            android:textOff="Absent"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:switchPadding="10dp"
+            android:showText="true"
+
+            android:minWidth="10dp"
+            android:layout_marginBottom="30sp"
+            android:layout_marginTop="10dp"
+            android:checked="true"
+            android:id="@+id/simpleSwitch"/>
+<!--        <Switch-->
+<!--            android:id="@+id/simpleSwitch"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="39dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:checked="true"-->
+<!--            android:text=""-->
+<!--            android:textOff="Absent"-->
+<!--            android:textOn="Present" />-->
+
+        <!--        <ToggleButton-->
+        <!--            android:id="@+id/tgl_status"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            android:layout_marginRight="10dp"-->
+        <!--            android:background="#0xFF00FF00"-->
+        <!--            android:clickable="false"-->
+        <!--            android:focusable="false"-->
+        <!--            android:textOff="Present"-->
+        <!--            android:textOn="" />-->
+
+
+    </LinearLayout>
+
+</LinearLayout>

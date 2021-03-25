@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FDFDFD</color>
+    <color name="colorPrimaryDark">#050505</color>
+    <color name="colorAccent">#0A0A0A</color>
+    <color name="bg_mainactivity">#d4e6e3</color>
+    <!-- Screens background color-->
+    <color name="bg_screen1">#16c266</color>
+    <color name="bg_screen2">#90c2bb</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#39d1ba</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="colorBGshape">#FFC107</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorText">#FFFFFF</color>
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#8de7f9</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+    </array>
+
+
+<!--        <color name="colorPrimary">#1F5BF3</color>-->
+<!--        <color name="colorPrimaryDark">#0947E8</color>-->
+<!--        <color name="colorAccent">#00A5FF</color>-->
+
+        <!--colors for modern ui-->
+        <color name="whiteTextColor">#fff</color>
+        <color name="primaryTextColor">#00a5ff</color>
+        <color name="loginBkColor">#f0f0f0</color>
+
+        <!--colros for card-->
+        <color name="whiteCardColor">#fff</color>
+
+
+</resources>
