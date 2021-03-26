@@ -1,2 +1,2 @@
 include ':app', ':mtb'
-rootProject.name='ClassesApp'
+rootProject.name='AppExample'

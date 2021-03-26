@@ -40,6 +40,8 @@
 
         <!--colros for card-->
         <color name="whiteCardColor">#fff</color>
+    <color name="cardColor">#ffffff</color>
+    <color name="textcardColor">#3f3f3f</color>
 
 
 </resources>
