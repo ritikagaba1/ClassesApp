@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -32,7 +33,16 @@ public class Dashboard extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard_new);
-        rv=(GridLayout) findViewById(R.id.rec);
+        GridLayout grid = (GridLayout) findViewById(R.id.gridlayout);
+        int childCount = grid.getChildCount();
+        if(childCount==0){
+            Intent intent = new Intent(getApplicationContext(), BatchList.class);
+
+            startActivity(intent);
+        }
+
+//        setSingleEvent(gridLayout);
+//        rv=(GridLayout) findViewById(R.id.rec);
 //        rv.setHasFixedSize(true);
 //        rv.setLayoutManager(new GridLayoutManager(this,3));
         myLists=new ArrayList<>();
@@ -54,6 +64,19 @@ public class Dashboard extends AppCompatActivity {
         }
 //        getdata();
     }
+//    private void setSingleEvent(GridLayout gridLayout) {
+//        for(int i = 0; i<gridLayout.getChildCount();i++){
+//            CardView cardView=(CardView)gridLayout.getChildAt(i);
+//            final int finalI= i;
+//            cardView.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//                    Toast.makeText(MainActivity.this,"Clicked at index "+ finalI,
+//                            Toast.LENGTH_SHORT).show();
+//                }
+//            });
+//        }
+//    }
 
 //    private void getdata() {
 //        myLists.add(new MyList(R.drawable.student));
