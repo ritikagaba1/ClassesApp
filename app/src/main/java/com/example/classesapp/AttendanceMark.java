@@ -12,8 +12,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.DatePicker;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -69,17 +71,39 @@ TextView textView1;
     private SimpleDateFormat dateFormat;
     private String date;
     final Calendar myCalendar = Calendar.getInstance();
+    ImageButton next,back;
     ArrayList<AttendanceMarkAd> attendanceData = new ArrayList<AttendanceMarkAd>();
     private Calendar c = Calendar.getInstance();
 TextView textView,textattendance;
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_attendancemark);
+        back=(ImageButton) findViewById(R.id.back);
+        next=(ImageButton) findViewById(R.id.next);
         textView1=(TextView)findViewById(R.id.dateppp);
         dateFormat = new SimpleDateFormat("dd-MM-yyyy");
         calendar = Calendar.getInstance();
         date = dateFormat.format(calendar.getTime());
+
         textView1.setText(date);
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                calendar.add(Calendar.DATE, 1);
+                date = dateFormat.format(calendar.getTime());
+                textView1.setText(date);
+            }
+        });
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                calendar.add(Calendar.DAY_OF_YEAR, -1);
+                date = dateFormat.format(calendar.getTime());
+                textView1.setText(date);
+            }
+        });
 //        final DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
 //
 //            @Override

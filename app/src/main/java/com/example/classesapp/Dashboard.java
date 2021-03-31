@@ -4,6 +4,7 @@ package com.example.classesapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -34,14 +35,15 @@ public class Dashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard_new);
         GridLayout grid = (GridLayout) findViewById(R.id.gridlayout);
-        int childCount = grid.getChildCount();
-        if(childCount==0){
-            Intent intent = new Intent(getApplicationContext(), BatchList.class);
+//        int childCount = grid.getChildCount();
+//        Toast.makeText(getApplicationContext(),"childcou"+childCount,Toast.LENGTH_LONG).show();
+//        if(childCount==0){
+//            Intent intent = new Intent(getApplicationContext(), BatchList.class);
+//
+//            startActivity(intent);
+//        }
 
-            startActivity(intent);
-        }
-
-//        setSingleEvent(gridLayout);
+        setSingleEvent(grid);
 //        rv=(GridLayout) findViewById(R.id.rec);
 //        rv.setHasFixedSize(true);
 //        rv.setLayoutManager(new GridLayoutManager(this,3));
@@ -64,19 +66,42 @@ public class Dashboard extends AppCompatActivity {
         }
 //        getdata();
     }
-//    private void setSingleEvent(GridLayout gridLayout) {
-//        for(int i = 0; i<gridLayout.getChildCount();i++){
-//            CardView cardView=(CardView)gridLayout.getChildAt(i);
-//            final int finalI= i;
-//            cardView.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    Toast.makeText(MainActivity.this,"Clicked at index "+ finalI,
+    private void setSingleEvent(GridLayout gridLayout) {
+        for(int i = 0; i<gridLayout.getChildCount();i++){
+            CardView cardView=(CardView)gridLayout.getChildAt(i);
+            final int finalI= i;
+            cardView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    if(finalI==0){
+                        Intent intent = new Intent(getApplicationContext(), BatchList.class);
+//
+                        startActivity(intent);
+                    }else if(finalI==1){
+                        Intent intent = new Intent(getApplicationContext(), StudentList.class);
+//
+                        startActivity(intent);
+                    }else if(finalI==2){
+                        Intent intent = new Intent(getApplicationContext(), AttendanceList.class);
+//
+                        startActivity(intent);
+                    }
+//                    else if(finalI==){
+//                        Intent intent = new Intent(getApplicationContext(), StudentList.class);
+////
+//                        startActivity(intent);
+//                    }else if(finalI==1){
+//                        Intent intent = new Intent(getApplicationContext(), StudentList.class);
+////
+//                        startActivity(intent);
+//                    }
+//                    Toast.makeText(Dashboard.this,"Clicked at index "+ finalI,
 //                            Toast.LENGTH_SHORT).show();
-//                }
-//            });
-//        }
-//    }
+                }
+            });
+        }
+    }
 
 //    private void getdata() {
 //        myLists.add(new MyList(R.drawable.student));

@@ -9,22 +9,61 @@
 
     >
 
-    <!--    <include layout="@layout/content_main" />-->
-    <TextView
-        android:id="@+id/dateppp"
-        android:layout_width="match_parent"
-        android:layout_height="36dp"
-        android:layout_margin="30dp"
-        android:background="@drawable/back"
-        android:textColor="@color/whiteCardColor"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:text="Some text" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        android:paddingBottom="35dp"
+        android:id="@+id/llll">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="47dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_image_buttton"
+
+            android:padding="5dp"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+        <TextView
+            android:id="@+id/dateppp"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/back"
+            android:text="Some text"
+            android:textAlignment="center"
+            android:textColor="@color/whiteCardColor"
+            android:textSize="24sp" />
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="50dp"
+            android:layout_height="47dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_image_buttton"
+
+            android:padding="5dp"
+            android:src="@drawable/ic_arrow_forward_black_24dp" />
+
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
     <ListView
         android:id="@+id/batch_list"
         android:layout_width="match_parent"
-        android:layout_height="754dp"
+        android:layout_height="761dp"
         android:layout_marginTop="70dp" />
 
 
