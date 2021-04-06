@@ -24,7 +24,7 @@
 
         android:layout_marginRight="40dp"
         android:layout_marginBottom="70dp"
-        android:autofillHints="Add Owner"
+        android:autofillHints="Add Batch"
         app:srcCompat="@drawable/ic_add"
         tools:ignore="VectorDrawableCompat" />
 

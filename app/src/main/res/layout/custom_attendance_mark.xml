@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
+        android:weightSum="3"
 
         >
 
@@ -20,7 +21,8 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
-           android:layout_weight="2"
+           android:layout_weight="1"
+            android:textAlignment="center"
 
             android:text="Student ID"
 
@@ -30,14 +32,14 @@
 
         <TextView
             android:id="@+id/studentname"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
 
             android:layout_marginTop="10dp"
 
-
+            android:textAlignment="center"
 
             android:text="Student Name"
             android:textAppearance="?android:attr/textAppearance"
@@ -53,7 +55,7 @@
             android:layout_gravity="center_horizontal"
             android:thumb="@drawable/background_switch"
             android:textStyle="bold|italic"
-
+            android:layout_weight="1"
 
             android:textOn="Present"
             android:textOff="Absent"
